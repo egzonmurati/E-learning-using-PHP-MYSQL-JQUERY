@@ -1,0 +1,186 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body {
+   background-image: url(../img/bc.png);
+     height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+img{
+	width: 100px;
+	height: 100px;
+	margin: 0 auto;
+}
+.form__content{
+   background: rgba(0,0,0,0.6);
+	width: 450px;
+	height: 500px;
+	box-shadow: 6px 4px 14px -4px rgba(84,81,84,1);
+	margin: 40px auto;
+	overflow: hidden;
+}
+.welcome__content{
+	 background: rgba(0,0,0,0.6);
+	width: 450px;
+	height: 700px;
+	box-shadow: 6px 4px 14px -4px rgba(84,81,84,1);
+	margin: 40px auto;
+	overflow: hidden;
+	}
+.form__content img{
+	position: relative;
+	left: 170px;
+	top:60px;
+}
+.welcome__content img{
+	position: relative;
+	left: 170px;
+	top:60px;
+}
+.form__content header {
+	margin-right: 55px;
+}
+.welcome__content  header {
+	margin-right: 55px;
+}
+.form__content header h5{
+	margin-right: 8px;
+	font-family: 'Ubuntu', sans-serif;
+	 color:  rgba(173, 174, 174, 1);
+	font-weight: 300;
+	margin-top: 35px;
+	margin-left: 150px;
+	float: left;
+}
+.welcome__content  header h5{
+	margin-right: 8px;
+	font-family: 'Ubuntu', sans-serif;
+	 color:  rgba(173, 174, 174, 1);
+	font-weight: 300;
+	margin-top: 35px;
+	margin-left: 185px;
+	float: left;
+}
+.form__content  header .btn1{
+	border: 1px solid rgba(31, 58, 147, 1);
+	border-radius: 4px;
+	color: rgba(31, 58, 147, 1);
+	display: inline-block;
+	padding: 4px 16px;
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 400;
+	font-size: 15px;
+	cursor: pointer;
+	text-align: center;
+	float: right;
+	margin-top: 30px;
+}
+.welcome__content  header .btn1{
+	border: 1px solid rgba(31, 58, 147, 1);
+	border-radius: 4px;
+	color: rgba(31, 58, 147, 1);
+	display: inline-block;
+	padding: 4px 16px;
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 400;
+	font-size: 15px;
+	cursor: pointer;
+	text-align: center;
+	float: right;
+	margin-top: 30px;
+}
+
+.form__content  form{
+	width: 350px;
+	height: 400px;
+	position: relative;
+	top: 80px;
+	left: 80px;
+	padding: 20px;
+}
+.welcome__content form{
+	width: 350px;
+	height: 400px;
+	position: relative;
+	top: 50px;
+	left: 80px;
+	padding: 20px;
+}
+
+input[type=text], select {
+    width: 80%;
+    padding: 9px 10px;
+    margin: 7px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+	border: none;
+    border-radius: 4px;
+	 background-color:  rgba(255,255,255,0.3);
+    box-sizing: border-box;
+}
+input[type=password], select {
+    width: 80%;
+    padding: 9px 10px;
+    margin: 7px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+	border: none;
+    border-radius: 4px;
+	background-color:  rgba(255,255,255,0.3);
+    box-sizing: border-box;
+}
+form span{
+	 color:  rgba(173, 174, 174, 0.9 );
+	 font-family: 'Ubuntu', sans-serif;
+	 font-size: 14px;
+	
+}
+
+
+input[type=submit] {
+    width: 80%;
+    background: rgba(31, 58, 147, 1);
+    color: white;
+    padding: 12px 20px;
+    margin: 20px 0;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+	font-family: 'Ubuntu', sans-serif;
+}
+input[type=date] {
+    width: 80%;
+    padding: 9px 10px;
+    margin: 7px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+	border: none;
+    border-radius: 4px;
+	background-color:  rgba(255,255,255,0.3);
+    box-sizing: border-box;
+    color: white;
+}
+input[type=radio] {
+   
+    padding: 9px 10px;
+    margin: 7px 0;
+    
+    border: 1px solid #ccc;
+	border: none;
+    border-radius: 4px;
+	background-color:  rgba(255,255,255,0.3);
+    box-sizing: border-box;
+    color: white;
+}
+label{
+	color: white;
+}
+
+
+::placeholder {
+  color: white;
+}

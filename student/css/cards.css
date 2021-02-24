@@ -1,0 +1,78 @@
+.product {
+  position: relative;
+  width: 300px;
+  margin: 50px auto;
+}
+.product.flip .fornt {
+  -webkit-transform: perspective(400px) rotateY(-180deg);
+          transform: perspective(400px) rotateY(-180deg);
+}
+.product.flip .back {
+  -webkit-transform: perspective(400px) rotateY(0deg);
+          transform: perspective(400px) rotateY(0deg);
+  height: auto;
+}
+.product > div {
+  width: 300px;
+  position: absolute;
+  box-shadow: 0px 0px 6px 0px #ddd;
+}
+.product .fornt, .product .back {
+  background-color: #fafafa;
+  -webkit-transform: perspective(1000px) rotateY(0deg);
+          transform: perspective(1000px) rotateY(0deg);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+}
+.product .fornt .description, .product .back .description {
+  position: relative;
+  padding: 30px 15px 15px;
+}
+.product .fornt .description .price .new-price, .product .back .description .price .new-price {
+  font-size: 18px;
+  font-weight: 300;
+  color: #48AF6A;
+}
+.product .fornt .description .quick-detail, .product .back .description .quick-detail {
+  background-color: #5bc0de;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  color: #fff;
+  font-size: 27px;
+  cursor: pointer;
+}
+.product .fornt.back .img-wrap ul.indicator li img, .product .back.back .img-wrap ul.indicator li img {
+  max-width: 100%;
+}
+.product .fornt.back .description .quick-detail, .product .back.back .description .quick-detail {
+  background-color: #77d596;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.product .fornt.back .description .quick-detail:hover i, .product .back.back .description .quick-detail:hover i {
+  -webkit-transform: rotate(180deg) translateX(3px);
+          transform: rotate(180deg) translateX(3px);
+}
+.product .fornt.back .description .quick-detail i, .product .back.back .description .quick-detail i {
+  -webkit-transform: rotate(180deg) translateX(0px);
+          transform: rotate(180deg) translateX(0px);
+}
+.product .back {
+  -webkit-transform: perspective(1000px) rotateY(180deg);
+          transform: perspective(1000px) rotateY(180deg);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+}
